@@ -3,3 +3,21 @@
 body {
 	background: url(images/Background-copy.png)
 }
+
+header, section, footer {
+	width: 100%;
+}
+
+#logoContainer {
+	background-image: url('images/shadded-line.png');
+	background-position: center;
+}
+
+#logo {
+
+	width: 100%;
+
+	img {
+		margin: 0 auto;
+	}
+}

@@ -1,3 +1,10 @@
 * {
-  box-sizing:border-box;
+	box-sizing: border-box;
+	magin: 0;
+	padding: 0;
+	border: 0;
+}
+
+ul, ol, li {
+	list-style: none;
 }
