@@ -11,13 +11,16 @@ header, section, footer {
 #logoContainer {
 	background-image: url('images/shadded-line.png');
 	background-position: center;
-}
 
-#logo {
 
-	width: 100%;
+	#logo {
 
-	img {
-		margin: 0 auto;
+		magin: 0 auto;
+		max-width: 300px;
+
+		img {
+			width: 100%;
+		}
 	}
 }
+
