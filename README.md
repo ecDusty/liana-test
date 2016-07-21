@@ -1,8 +1,11 @@
 # Web Developers Starting Tool Kit
 
-Welcome to _ecDusty's_ Web Developers tool kit, an open source project.
+Welcome to _ecDusty's_ site off of a provided Mock Up.
 
-The purpose of this tool kit is to give developers an easy means to start building a website from scratch. It provides a basic structure of a website, and gives the developer a ready to go gulpfile.js
+## Difficulties Encountered
+
+  1. Font: I didn't have available the OpenSans font, on my PC or for the Website.
+    * To get around this I used my typekit acount to get the OpenSans font for the PC, then created a font kit for the website, so can also have access to the required font.
 
 
 ## Folder Layout
@@ -76,8 +79,6 @@ As I develope on a Windows machine, these instructions are for windows users, bu
 
 ## The TO-DO List
 
-1. Finish the README
-    * Add how a developer can get started using this toolkit
 
 [GO-CSS]: <https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery> "Google's Optimized CSS Delivery"
 [GitHub Pages]: <https://pages.github.com/> "GitHub hosting solution GitHub Pages"
