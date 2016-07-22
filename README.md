@@ -4,8 +4,21 @@ Welcome to _ecDusty's_ site off of a provided Mock Up.
 
 ## Difficulties Encountered
 
-  1. Font: I didn't have available the OpenSans font, on my PC or for the Website.
+  1. Matching the Site to the layout as closely as possible.
+    * The best option to ensure that the site I produced matched the provided PSD layout was bad saving the layout as a jpeg, then having it load in an absolute position in the body and finally applying an opacity of between 0.2-0.4 while I built the site.
+    * This allowed me to observe how close I was getting the final site to the layout.
+
+  2. Font: I didn't have available the OpenSans font, on my PC or for the Website.
     * To get around this I used my typekit acount to get the OpenSans font for the PC, then created a font kit for the website, so can also have access to the required font.
+
+  3. Banner: Took too long to build the banner completely in HTML & CSS
+    * It seems the banner was created through many different layers on Photoshop. I originally wanted to make the banner on the site through HTML & CSS and use the curtain as it's background.
+    * Considering the amount of time this would take, it was much quicker to convert the banner to an image, and have the image react responsively to the screen size.
+
+  4. Footer Background: Difficulty finding the perfect match to the gradient background.
+    * To save time I saved the footers background as a png and had it load as a background im
+
+
 
 
 ## Folder Layout
