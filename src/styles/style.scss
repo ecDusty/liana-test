@@ -7,9 +7,11 @@
 
 ==================*/
 .testIMG {
-  position: fixed;
+  position: absolute;
+  margin: 0 auto;
+  transform: translateX(-50%);
+  left: 50%;
   top: 0;
-  left: 0;
   z-index: 5;
   opacity: 0.3;
   width: 1200px;
@@ -23,23 +25,27 @@
 ==================*/
 
 body {
-    background-color: #fcfcf7;
-    box-shadow: inset 0 60px 250px rgba(31,31,31,0.15);
-
+  background-color: #fcfcf7;
+  box-shadow: inset 0 60px 250px rgba(31,31,31,0.15);
+  position:relative;
 }
 
 header, section, footer, #logoContainer {
-    width: 100%;
+  width: 100%;
 }
 
 .specChar {
-    font: 400 0.75em Webdings;
+  font: 400 0.75em Webdings;
 }
 
-#navWrap, #logoContainer, #contentContainer /*Add more later*/ {
+#navWrap, #contentContainer, #footMenu, #contactBar {
   min-width: 600px;
   max-width: 960px;
   margin: 0 auto;
+}
+
+p {
+  font: 0.8em 'Arial', sans-serif;
 }
 /*===========================
 
@@ -62,31 +68,37 @@ header {
   }
 
   #navLogo {
-    margin: 0 6%;
+    margin-left: 6%;
     max-width: 151px;
     position: absolute;
   }
 
   #nav {
-    margin: 13px 10px 19px 9px;
+    margin: 12px 9px 20px 9px;
     display: flex;
     position: absolute;
     right: 0px;
 
     #dropdown {
-      color: #5eb8da;
       padding: 0 15px;
 
       .specChar {
         font-size: 1.1em;
-        margin-left: 2px;
+        margin-left: 6px;
+      }
+
+      a {
+        color: #5eb8da;
       }
     }
 
     .nav-item {
       border-left: 1px solid rgba(0,0,0,0.15);
-      padding: 0 13px;
-      color: #d91643;
+      padding: 0 12px 0 13px;
+
+      a{
+        color: #d91643;
+      }
     }
 
     .extraPadLeft {
@@ -98,7 +110,7 @@ header {
 @media (min-width: 860px) {
   header {
     #navLogo {
-      margin: 0 16%;
+      margin-left: 16.3%;
     }
   }
 }
@@ -111,12 +123,15 @@ header {
 #logoContainer {
   background-image: url('../images/shadded-line.png');
   background-position: center 250%;
+  background-repeat: no-repeat;
   width: 100%;
+  min-width: 600px;
+  padding-left: 10px;
 
-    #logo {
-        margin: 19px auto 0;
-        width: 300px;
-    }
+  #logo {
+    margin: 19px auto -1px;
+    width: 300px;
+  }
 }
 
 /*===========================
@@ -127,11 +142,226 @@ header {
 ============================*/
 
 #contentContainer {
+  padding: 0 0 21px;
+}
 
-  #banner {
-    border-radius: 8px;
+#banner {
+  border-radius: 8px;
+  margin-bottom: -2px;
+}
+
+.highlights {
+  margin-top: 10px;
+  margin-bottom: 9pxpx;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 32%;
+  min-height: 241px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.15);
+
+  .text {
+    padding: 10px 19px 0;
+
+    p {
+      line-height: 19px;
+    }
   }
 
+  .redHigh {
+    padding: 3px 0 0 0;
+    color: #e92c4d;
+
+    .specChar {
+      margin: -9px 0 0 4px;
+      font-size: 1em;
+    }
+  }
+}
+
+.highlights.left {
+  margin-right: 1%;
+}
+
+.highlights.middle {
+  margin: 10px 1% 9px;
+}
+
+.highlights.right {
+  margin-left: 0.9%;
+}
+
+.highlightTitle {
+  display: flex;
+  text-transform: uppercase;
+  padding: 10px 0 0 6%;
+  white-space: nowrap;
+  height: 36px;
+
+  h3 {
+    font: 800 1em "open-sans";
+    margin: -3px 0 0 -1px;
+  }
+}
+
+.rssFeed {
+  width: 14px;
+  height: 15px;
+  margin-right: 3%;
+}
+
+#karppa, .highlightTitle, #kaleva {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+#karppa {
+  background: linear-gradient(90deg, #242424, #3f3f3f);
+  color: #fff;
+
+  .highlightTitle{
+    background-image: url('../images/karppa-title-background.png');
+  }
+}
+
+#karppaLogo {
+  width: 70px;
+  height: 44px;
+  margin-right: 13px;
+  margin-top: -14px;
+}
+
+#kalevafiLogo {
+  margin-left: -1px;
+  width: 95px;
+  height: 15px;
+}
+
+#kaleva{
+  background-image: url('../images/kaleva-background.png');
+  color: #000;
+
+  .highlightTitle{
+    background-image: url('../images/kaleva-title-background.png');
+  }
+}
+
+#karppa .text, #kaleva .text {
+  padding: 11px 18px 0;
+
+  span {
+    font-weight: 700;
+    margin-right: 2px;
+  }
+
+  .yellow {
+    color: #fec938;
+  }
+
+  .orange {
+    color: #ea8c1c;
+  }
+
+  p {
+    margin-right: 14px;
+    padding: 14px 0 7px;
+    font-size: 0.74em;
+    line-height: 20px;
+  }
+
+  p:nth-child(2){
+    padding: 10px 0 9px;
+  }
+
+  p:nth-child(3){
+    padding: 12px 0 0;
+  }
+
+  .light-border {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .dark-border {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+}
+
+#weather {
+
+  .firstRow {
+    margin-top: 12px;
+  }
+  .row {
+
+    .column {
+      display: inline-block;
+
+      div {
+        display: inline-block;
+      }
+    }
+
+    .stats {
+      padding: 10px;
+      font: 400 13px Arial;
+      background-color: rgba(0,0,0,0.03);
+      border-left: 1px solid rgba(0,0,0,0.1);
+      border-top: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .stats:nth-child(3) {
+      border-right: 1px solid rgba(0,0,0,0.1);
+      padding-right: 9px;
+    }
+
+    img {
+      width: 24px;
+    }
+  }
+}
+#weather .row, #curWeather {
+  margin-left: 25px;
+  margin-right: 23px;
+}
+
+#curWeather {
+  margin-top: 14px;
+  padding: 0 0 0 49px;
+
+  div {
+    display: inline-block;
+  }
+
+  .stats {
+    padding-left: 22px;
+  }
+
+  p {
+    font: 400 12px 'open-sans';
+  }
+
+  h4 {
+    font: 800 37px 'open-sans';
+    line-height: 33px;
+    padding-left: 1px;
+    transform: translatey(-4px);
+  }
+}
+
+#weatherTitle {
+  background-image: url('../images/oulun-title-background.png');
+  padding-left: 5.4%;
+
+  h4 {
+    margin-left: -6px;
+  }
+}
+
+#curWeatherPic {
+  max-width: 66px;
+  margin-top: 3px;
 }
 
 
@@ -141,4 +371,66 @@ header {
 
 ==================*/
 
+footer {
+  height: 190px;
+  background-image: url('../images/footer-background.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 27px;
+  text-transform: uppercase;
 
+  ul {
+    display: flex;
+  }
+}
+
+
+#footMenu {
+  position: relative;
+  padding: 1px 0 24px 15px;
+  box-shadow: 0px 1px 0 0 #f6f6f2;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.footListItem {
+  padding: 7px 21px 7px 4px;
+  font: 700 0.9em 'open-sans';
+
+  a {
+    color: #e92c4d;
+  }
+}
+
+#footSocial {
+  position: absolute;
+  top: 0;
+  right: 1.6%;
+
+  img {
+    max-width: 36px;
+    margin: 0 3px;
+  }
+}
+
+#contactInfo {
+  margin: 33px auto;
+  max-width: 400px;
+  font: 400 0.75em 'open-sans';
+  letter-spacing: 1px;
+  padding: 0 0 0 25px;
+
+  li {
+    justify-content: center;
+  }
+
+  .compInfo {
+    margin-right: 15px;
+  }
+
+  .contactList {
+    padding: 0 14px;
+    color: #808080;
+    border-left: 1px solid rgba(0,0,0,0.15);
+  }
+}
