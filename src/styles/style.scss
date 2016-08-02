@@ -2,488 +2,479 @@
 
 /*==================
 
-   Site Pre-sets
+	 Site Pre-sets
 
 ==================*/
 
 body {
-  background-color: #fcfcf7;
-  box-shadow: inset 0 60px 250px rgba(31,31,31,0.15);
-  position:relative;
+	background-color: #fcfcf7;
+	box-shadow: inset 0 60px 250px rgba(31,31,31,0.15);
 }
 
 header, section, footer, #logoContainer {
-  width: 100%;
+	width: 100%;
 }
 
 .specChar {
-  font: 400 0.8em Webdings, unifont;
+	font: 400 0.8em Webdings, unifont;
 }
 
 #navWrap, #contentContainer, #footMenu, #contactBar {
-  min-width: 300px;
-  max-width: 960px;
-  margin: 0 auto;
+	min-width: 300px;
+	max-width: 960px;
+	margin: 0 auto;
 }
 
 p {
-  font: 0.8em 'Arial', sans-serif;
+	font: 0.8em 'Arial', sans-serif;
 }
 
 /*===========================
 
-                  HEADER
+						HEADER
 
 ============================*/
 
 header {
-  background: #fff;
-  box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.14);
-  text-transform: uppercase;
-  font: 800 0.65em "open-sans", sans-serif;
-  letter-spacing: 0.3px;
-  height: 40px;
+	background: #fff;
+	box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.14);
+	text-transform: uppercase;
+	font: 800 0.65em "open-sans", sans-serif;
+	letter-spacing: 0.3px;
+	height: 40px;
 
-  #navWrap {
-      width: 100%;
-      display: flex;
-      position: relative;
-  }
+	#navWrap {
+			width: 100%;
+			display: flex;
+			position: relative;
+	}
 
-  #navLogo {
-      margin-left: 0%;
-      max-width: 151px;
-      position: absolute;
-  }
+	#navLogo {
+			margin-left: 0%;
+			max-width: 151px;
+			position: absolute;
+	}
 
-  #nav {
-      margin: 12px 9px 20px 9px;
-      display: flex;
-      position: absolute;
-      right: 0px;
-      min-width: 324px;
+	#nav {
+			display: flex;
+			min-width: 324px;
 
-      #dropdown {
-          padding: 0 15px;
+			#dropdown {
+					padding: 0 15px;
 
-          .specChar {
-              font-size: 1.1em;
-              margin-left: 6px;
-          }
+					.specChar {
+							font-size: 1.1em;
+							margin-left: 6px;
+					}
 
-          a {
-              color: #5eb8da;
-          }
-      }
+					a {
+							color: #5eb8da;
+					}
+			}
 
-      .nav-item {
-          border-left: 1px solid rgba(0,0,0,0.15);
-          padding: 0 12px 0 13px;
+			.nav-item {
+					border-left: 1px solid rgba(0,0,0,0.15);
+					padding: 0 12px 0 13px;
 
-          a{
-              color: #d91643;
-          }
-      }
+					a{
+							color: #d91643;
+					}
+			}
 
-      .extraPadLeft {
-          padding-left: 17px;
-      }
-  }
+			.extraPadLeft {
+					padding-left: 17px;
+			}
+	}
 }
 
 /*==================
 
-       Main Logo
+			 Main Logo
 
 ==================*/
 #logoContainer {
-  background-image: url('../images/shadded-line.png');
-  background-position: center 250%;
-  background-repeat: no-repeat;
-  width: 100%;
-  padding-left: 10px;
+	background-image: url('../images/shadded-line.png');
+	background-position: center 250%;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding-left: 10px;
 
-  #logo {
-      margin: 19px auto -1px;
-      max-width: 300px;
-  }
+	#logo {
+			margin: 19px auto -1px;
+			max-width: 300px;
+	}
 }
 
 /*===========================
 
-              MAIN CONTENT
-                  SECTION
+				MAIN CONTENT
+					SECTION
 
 ============================*/
 
 #contentContainer {
-  padding: 0 0 21px;
+	padding: 0 0 21px;
 }
 
 #banner {
-  border-radius: 8px;
-  margin-bottom: -2px;
+	border-radius: 8px;
+	margin-bottom: -2px;
+}
+
+#highlightsList {
+	text-align: center;
 }
 
 //First 3 Highlights styles section
 //
 .highlights {
-  margin-top: 10px;
-  margin-bottom: 9pxpx;
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
-  width: 48%;
-  min-height: 241px;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.15);
+	margin: 10px auto 9px;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	width: 48%;
+	max-width: 307.2px;
+	min-width: 263px;
+	min-height: 241px;
+	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.15);
+	text-align: left;
 
-  .text {
-      padding: 10px 19px 0;
+	.text {
+			padding: 10px 19px 0;
 
-      p {
-          line-height: 19px;
-      }
-  }
+			p {
+					line-height: 19px;
+			}
+	}
 
-  .redHigh {
-      padding: 3px 0 0 0;
-      color: #e92c4d;
+	.redHigh {
+			padding: 3px 0 0 0;
+			color: #e92c4d;
 
-      .specChar {
-          margin: -9px 0 0 4px;
-          font-size: 1em;
-      }
-  }
+			.specChar {
+					margin: -9px 0 0 4px;
+					font-size: 1em;
+			}
+	}
 }
 
-.highlights.left {
-  margin-right: 1%;
-}
-
-.highlights.middle {
-  margin: 10px 1% 9px;
-}
-
-.highlights.right {
-  margin-left: 0.9%;
-}
 
 //This holds all the styles specific to the 4th & 5th Highlight boxes: 'Karppa Uutiset' & 'Kaleva.fi'
 //
 .highlightTitle {
-  display: flex;
-  text-transform: uppercase;
-  padding: 10px 0 0 6%;
+	display: flex;
+	text-transform: uppercase;
+	padding: 10px 0 0 6%;
 //  white-space: nowrap;
-  min-height: 36px;
+	min-height: 36px;
 
-  h3 {
-      font: 800 1em "open-sans";
-      margin: -3px 0 0 -1px;
-  }
+	h3 {
+			font: 800 1em "open-sans";
+			margin: -3px 0 0 -1px;
+	}
 }
 
 .rssFeed {
-  width: 14px;
-  height: 15px;
-  margin-right: 3%;
+	width: 14px;
+	height: 15px;
+	margin-right: 3%;
 }
 
 #karppa, .highlightTitle, #kaleva {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
 }
 
 #karppa {
-  background: linear-gradient(to top, #242424, #3f3f3f);
-  color: #fff;
+	background: linear-gradient(to top, #242424, #3f3f3f);
+	color: #fff;
 
-  .highlightTitle{
-      background-image: url('../images/karppa-title-background.png');
-  }
+	.highlightTitle{
+			background-image: url('../images/karppa-title-background.png');
+	}
 }
 
 #karppaLogo {
-  width: 70px;
-  height: 44px;
-  margin-right: 13px;
-  margin-top: -14px;
+	width: 70px;
+	height: 44px;
+	margin-right: 13px;
+	margin-top: -14px;
 }
 
 #kalevafiLogo {
-  margin-left: -1px;
-  width: 95px;
-  height: 15px;
+	margin-left: -1px;
+	width: 95px;
+	height: 15px;
 }
 
 #kaleva{
-  background-image: url('../images/kaleva-background.png');
-  color: #000;
+	background-image: url('../images/kaleva-background.png');
+	color: #000;
 
-  .highlightTitle{
-      background-image: url('../images/kaleva-title-background.png');
-  }
+	.highlightTitle{
+			background-image: url('../images/kaleva-title-background.png');
+	}
 }
 
 #karppa .text, #kaleva .text {
-  padding: 11px 18px 0;
+	padding: 11px 18px 0;
 
-  span {
-      font-weight: 700;
-      margin-right: 2px;
-  }
+	span {
+			font-weight: 700;
+			margin-right: 2px;
+	}
 
-  .yellow {
-      color: #fec938;
-  }
+	.yellow {
+			color: #fec938;
+	}
 
-  .orange {
-      color: #ea8c1c;
-  }
+	.orange {
+			color: #ea8c1c;
+	}
 
-  p {
-      margin-right: 14px;
-      padding: 14px 0 7px;
-      font-size: 0.74em;
-      line-height: 20px;
-  }
+	p {
+			margin-right: 14px;
+			padding: 14px 0 7px;
+			font-size: 0.74em;
+			line-height: 20px;
+	}
 
-  p:nth-child(2){
-      padding: 10px 0 9px;
-  }
+	p:nth-child(2){
+			padding: 10px 0 9px;
+	}
 
-  p:nth-child(3){
-      padding: 12px 0 0;
-  }
+	p:nth-child(3){
+			padding: 12px 0 0;
+	}
 
-  .light-border {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  }
+	.light-border {
+			border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+	}
 
-  .dark-border {
-      border-bottom: 1px solid rgba(0,0,0,0.1);
-  }
+	.dark-border {
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
 }
 
 //This Section contains all the styles required to make the Local Weather Highlight Box 'Oulun Saa'
 //
 #weather {
 
-  .firstRow {
-      margin-top: 12px;
-  }
-  .row {
+	.firstRow {
+			margin-top: 12px;
+	}
+	.row {
 
-      .column {
-          display: inline-block;
-          width: 86px;
+			.column {
+					display: inline-block;
+					width: 86px;
 
-          div {
-              display: inline-block;
-          }
-      }
+					div {
+							display: inline-block;
+					}
+			}
 
-      .stats {
-          padding: 8px 9px 10px;
-          font: 400 14px Arial;
-          background-color: rgba(0,0,0,0.03);
-          border-left: 1px solid rgba(0,0,0,0.1);
-          border-top: 1px solid rgba(0,0,0,0.1);
-      }
+			.stats {
+					padding: 8px 9px 10px;
+					font: 400 14px Arial;
+					background-color: rgba(0,0,0,0.03);
+					border-left: 1px solid rgba(0,0,0,0.1);
+					border-top: 1px solid rgba(0,0,0,0.1);
+			}
 
-      .stats:nth-child(3) {
-          border-right: 1px solid rgba(0,0,0,0.1);
-      }
+			.stats:nth-child(3) {
+					border-right: 1px solid rgba(0,0,0,0.1);
+			}
 
-      img {
-          width: 24px;
-      }
+			img {
+					width: 24px;
+			}
 
-      a {
-          color: #51adcf;
-          text-align: center;
-          font-size: 15px;
-          letter-spacing: -0.12px;
+			a {
+					color: #51adcf;
+					text-align: center;
+					font-size: 15px;
+					letter-spacing: -0.12px;
 
-          p {
-              padding-left: 3px;
-          }
+					p {
+							padding-left: 3px;
+					}
 
-          .specChar {
-              margin-left: 3px;
-              font-size: 13px;
-          }
-      }
-  }
+					.specChar {
+							margin-left: 3px;
+							font-size: 13px;
+					}
+			}
+	}
 
 //Styles for third Row of Weather information
-  .forcast {
-      margin-bottom: 10px;
+	.forcast {
+			margin-bottom: 10px;
 
-      .column {
-          border-top: 1px solid rgba(0,0,0,0.1);
-          border-bottom:  1px solid rgba(0,0,0,0.1);
-          border-left: 1px solid rgba(0,0,0,0.1);
+			.column {
+					border-top: 1px solid rgba(0,0,0,0.1);
+					border-bottom:  1px solid rgba(0,0,0,0.1);
+					border-left: 1px solid rgba(0,0,0,0.1);
 
-          .forTemp {
-              margin-top: 14px;
-              vertical-align: top;
-          }
+					.forTemp {
+							margin-top: 14px;
+							vertical-align: top;
+					}
 
-          #temp1 {
-              margin-left: 12px;
-          }
+					#temp1 {
+							margin-left: 12px;
+					}
 
-          #temp2 {
-              margin-left: 5px;
-          }
+					#temp2 {
+							margin-left: 5px;
+					}
 
-          #temp3 {
-              margin-left: 2px;
-          }
+					#temp3 {
+							margin-left: 2px;
+					}
 
-          h5 {
-              font: 800 17px 'open-sans';
-          }
-      }
+					h5 {
+							font: 800 17px 'open-sans';
+					}
+			}
 
-      .column:nth-child(3) {
-          border-right: 1px solid rgba(0,0,0,0.1);
-      }
-  }
+			.column:nth-child(3) {
+					border-right: 1px solid rgba(0,0,0,0.1);
+			}
+	}
 
-  .forcastLink {
-      margin: 10px auto 0 !important;
-  }
+	.forcastLink {
+			margin: 10px auto 0 !important;
+	}
 }
 
 #weatherImg1, #weatherImg2, #weatherImg3 {
-  margin: 18px 5px 8px 9px;
+	margin: 18px 5px 8px 9px;
 }
 
 #weather .row, #curWeather {
-  max-width: 260px;
-  margin: 0 auto;
-  padding-left: 2px;
+	max-width: 260px;
+	margin: 0 auto;
+	padding-left: 2px;
 }
 
 //CURRENT WEATHER Styles- has the current local weather information
 //
 #curWeather {
-  margin: 14px auto 13px;
-  padding: 0 0 0 49px;
+	margin: 14px auto 13px;
+	padding: 0 0 0 49px;
 
-  div {
-      display: inline-block;
-  }
+	div {
+			display: inline-block;
+	}
 
-  .stats {
-      padding-left: 22px;
-  }
+	.stats {
+			padding-left: 22px;
+	}
 
-  p {
-      font: 400 12px 'open-sans';
-  }
+	p {
+			font: 400 12px 'open-sans';
+	}
 
-  h4 {
-      font: 800 37px 'open-sans';
-      line-height: 33px;
-      padding-left: 1px;
-      transform: translatey(-4px);
-  }
+	h4 {
+			font: 800 37px 'open-sans';
+			line-height: 33px;
+			padding-left: 1px;
+			transform: translatey(-4px);
+	}
 }
 
 #weatherTitle {
-  background-image: url('../images/oulun-title-background.png');
-  padding-left: 5.4%;
+	background-image: url('../images/oulun-title-background.png');
+	padding-left: 5.4%;
 
-  h4 {
-      margin-left: -6px;
-  }
+	h4 {
+			margin-left: -6px;
+	}
 }
 
 #curWeatherPic {
-  max-width: 66px;
-  margin-top: 2px;
-  margin-left: 2px;
+	max-width: 66px;
+	margin-top: 2px;
+	margin-left: 2px;
 }
 
 
 /*==================
 
-  Footer
+		Footer
 
 ==================*/
 
 footer {
-  min-height: 190px;
-  background-image: url('../images/footer-background.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 27px;
-  text-transform: uppercase;
+	background-image: url('../images/footer-background.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-transform: uppercase;
 
-  ul {
-      display: flex;
-  }
+	ul {
+		text-align: center;
+
+		li {
+			display: inline-block;
+		}
+	}
 }
 
 //FOOTER MENU styles
 //
 #footMenu {
-  position: relative;
-  padding: 1px 0 24px 15px;
-  box-shadow: 0px 1px 0 0 #f6f6f2;
-  border-bottom: 1px solid #d4d4d4;
+	position: relative;
+	padding: 28px 0 48px 15px;
+	box-shadow: 0px 1px 0 0 #f6f6f2;
+	border-bottom: 1px solid #d4d4d4;
 }
 
 .footListItem {
-  padding: 7px 21px 7px 4px;
-  font: 700 0.9em 'open-sans';
+	padding: 7px 21px 7px 4px;
+	font: 700 0.9em 'open-sans';
 
-  a {
-      color: #e92c4d;
-  }
+	a {
+		color: #e92c4d;
+	}
 }
 
 //SOCIAL MEDIA BAR styles
 //
 #footSocial {
-  position: absolute;
-  top: 0;
-  right: 1.6%;
+	position: absolute;
 
-  img {
-      max-width: 36px;
-      margin: 0 3px;
-  }
+	img {
+		max-width: 36px;
+		margin: 0 3px;
+	}
 }
 
 //FOOTER CONTACT INFO Styles
 //
 #contactInfo {
-  margin: 33px auto;
-  max-width: 400px;
-  font: 400 0.75em 'open-sans';
-  letter-spacing: 1px;
-  padding: 0 0 0 25px;
+	margin: 33px auto 0;
+	max-width: 410px;
+	font: 400 0.75em 'open-sans';
+	letter-spacing: 1px;
+	padding: 0 0 54px 25px;
 
-  li {
-      justify-content: center;
-  }
+	li {
+		justify-content: center;
+	}
 
-  .compInfo {
-      margin-right: 15px;
-  }
+	.compInfo {
+			margin-right: 15px;
+	}
 
-  .contactList {
-      padding: 0 14px;
-      color: #808080;
-      border-left: 1px solid rgba(0,0,0,0.15);
-  }
+	.contactList {
+			padding: 0 14px;
+			color: #808080;
+			border-left: 1px solid rgba(0,0,0,0.15);
+	}
 }
 
 
@@ -497,26 +488,98 @@ footer {
 ==================================================
 ================================================*/
 
-@media (min-width: 860px) {
-  header {
-      #navLogo {
-          margin-left: 16.3%;
-      }
-  }
+@media only screen and (min-width: 860px) {
+	header {
+			#navLogo {
+					margin-left: 16.3%;
+			}
+	}
 }
 
-@media (min-width: 830px) {
-  header {
+@media only screen and (min-width: 830px) {
+	header {
+		#nav {
+			margin: 12px 9px 20px 9px;
+			position: absolute;
+			right: 0px;
+		}
+	}
 
-  }
+	.highlights {
+		width: 32%;
+	}
 
-  .highlights {
-    width: 32%;
-  }
+	.highlights.left {
+		margin-right: 1%;
+	}
+
+	.highlights.middle {
+		margin: 10px 1% 9px;
+	}
+
+	.highlights.right {
+		margin-left: 0.9%;
+	}
+
+	footer {
+		ul {
+			text-align: inherit;
+		}
+	}
+
+	#footMenu {
+		padding: 28px 0 24px 15px;
+	}
+
+	#footSocial {
+		top: 27px;
+		right: 1.6%;
+	}
+}
+
+@media only screen and (min-width: 591px) and (max-width: 829px) {
+	.highlights {
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+
+	header {
+		#nav {
+			margin: 12px 9px 20px 9px;
+			position: absolute;
+			right: 0px;
+		}
+	}
+
+	.footListItem {
+		min-width: 116.5px;
+	}
+
+	#footSocial {
+		transform: translateX(-50%);
+		left: 50%;
+		bottom: 0;
+	}
+
 }
 
 @media only screen and (max-width: 590px) {
-  #navLogo {
-      display: none;
-    }
+	#navLogo {
+			display: none;
+		}
+	#nav {
+		position: relative;
+		margin: 12px auto 9px;
+	}
+
+	.footListItem {
+		min-width: 116.5px;
+	}
+
+	#footSocial {
+		transform: translateX(-50%);
+		left: 50%;
+		bottom: 0;
+		min-width: 168px;
+	}
 }

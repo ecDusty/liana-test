@@ -1,26 +1,34 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html {
+		height: 100%;
+}
+
+body {
+		min-height: 100%;
 }
 
 ul, ol, li {
-  list-style: none;
+	list-style: none;
 }
 
 img {
-  width: 100%;
+	width: 100%;
 }
 
 a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-  text-decoration: none;
-  color: auto;
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects;
+	text-decoration: none;
+	color: auto;
 }
 
 a:active,
 a:hover {
-  outline-width: 0;
+	outline-width: 0;
 }
