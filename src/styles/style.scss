@@ -2,7 +2,7 @@
 
 /*==================
 
-	 Site Pre-sets
+		Site Pre-sets
 
 ==================*/
 
@@ -15,14 +15,10 @@ header, section, footer, #logoContainer {
 	width: 100%;
 }
 
-.specChar {
-	font: 400 0.8em Webdings, unifont;
-}
-
 #navWrap, #contentContainer, #footMenu, #contactBar {
-	min-width: 300px;
-	max-width: 960px;
-	margin: 0 auto;
+min-width: 300px;
+max-width: 960px;
+margin: 0 auto;
 }
 
 p {
@@ -44,52 +40,58 @@ header {
 	height: 40px;
 
 	#navWrap {
-			width: 100%;
-			display: flex;
-			position: relative;
+		width: 100%;
+		display: flex;
+		position: relative;
 	}
 
 	#navLogo {
-			margin-left: 0%;
-			max-width: 151px;
-			position: absolute;
+		margin-left: 0%;
+		max-width: 151px;
+		position: absolute;
 	}
 
 	#nav {
-			display: flex;
-			min-width: 324px;
+		display: flex;
+		min-width: 324px;
 
-			#dropdown {
-					padding: 0 15px;
+		#dropdown {
+			padding: 0 15px;
 
-					.specChar {
-							font-size: 1.1em;
-							margin-left: 6px;
-					}
+			.specChar {
+				font-size: 1.1em;
+				margin-left: 6px;
 
-					a {
-							color: #5eb8da;
-					}
+				svg {
+					margin: 0 0 1px 2px;
+					width: 6.5px;
+					fill: #5eb8da;
+				}
 			}
 
-			.nav-item {
-					border-left: 1px solid rgba(0,0,0,0.15);
-					padding: 0 12px 0 13px;
-
-					a{
-							color: #d91643;
-					}
+			a {
+				color: #5eb8da;
 			}
+		}
 
-			.extraPadLeft {
-					padding-left: 17px;
+		.nav-item {
+			border-left: 1px solid rgba(0,0,0,0.15);
+			padding: 0 12px 0 13px;
+
+			a{
+				color: #d91643;
 			}
+		}
+
+		.extraPadLeft {
+			padding-left: 17px;
+		}
 	}
 }
 
 /*==================
 
-			 Main Logo
+		Main Logo
 
 ==================*/
 #logoContainer {
@@ -100,8 +102,8 @@ header {
 	padding-left: 10px;
 
 	#logo {
-			margin: 19px auto -1px;
-			max-width: 300px;
+		margin: 19px auto -1px;
+		max-width: 300px;
 	}
 }
 
@@ -140,21 +142,30 @@ header {
 	text-align: left;
 
 	.text {
-			padding: 10px 19px 0;
+		padding: 10px 19px 0;
 
-			p {
-					line-height: 19px;
-			}
+		p {
+			line-height: 19px;
+		}
 	}
 
 	.redHigh {
-			padding: 3px 0 0 0;
-			color: #e92c4d;
+		padding: 3px 0 0 0;
+		color: #e92c4d !important;
 
-			.specChar {
-					margin: -9px 0 0 4px;
-					font-size: 1em;
+		a:visited {
+			color: #e92c4d;
+		}
+
+		.specChar {
+			margin: -9px 0 0 6px;
+			font-size: 1em;
+
+			svg {
+				width: 4px;
+				fill: #e92c4d;
 			}
+		}
 	}
 }
 
@@ -165,12 +176,11 @@ header {
 	display: flex;
 	text-transform: uppercase;
 	padding: 10px 0 0 6%;
-//  white-space: nowrap;
 	min-height: 36px;
 
 	h3 {
-			font: 800 1em "open-sans";
-			margin: -3px 0 0 -1px;
+		font: 800 1em "open-sans";
+		margin: -3px 0 0 -1px;
 	}
 }
 
@@ -192,7 +202,7 @@ header {
 	color: #fff;
 
 	.highlightTitle{
-			background-image: url('../images/karppa-title-background.png');
+		background-image: url('../images/karppa-title-background.png');
 	}
 }
 
@@ -214,7 +224,7 @@ header {
 	color: #000;
 
 	.highlightTitle{
-			background-image: url('../images/kaleva-title-background.png');
+		background-image: url('../images/kaleva-title-background.png');
 	}
 }
 
@@ -222,39 +232,39 @@ header {
 	padding: 11px 18px 0;
 
 	span {
-			font-weight: 700;
-			margin-right: 2px;
+		font-weight: 700;
+		margin-right: 2px;
 	}
 
 	.yellow {
-			color: #fec938;
+		color: #fec938;
 	}
 
 	.orange {
-			color: #ea8c1c;
+		color: #ea8c1c;
 	}
 
 	p {
-			margin-right: 14px;
-			padding: 14px 0 7px;
-			font-size: 0.74em;
-			line-height: 20px;
+		margin-right: 14px;
+		padding: 14px 0 7px;
+		font-size: 0.74em;
+		line-height: 20px;
 	}
 
 	p:nth-child(2){
-			padding: 10px 0 9px;
+		padding: 10px 0 9px;
 	}
 
 	p:nth-child(3){
-			padding: 12px 0 0;
+		padding: 12px 0 0;
 	}
 
 	.light-border {
-			border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 	}
 
 	.dark-border {
-			border-bottom: 1px solid rgba(0,0,0,0.1);
+		border-bottom: 1px solid rgba(0,0,0,0.1);
 	}
 }
 
@@ -263,90 +273,99 @@ header {
 #weather {
 
 	.firstRow {
-			margin-top: 12px;
+		margin-top: 12px;
 	}
 	.row {
 
-			.column {
-					display: inline-block;
-					width: 86px;
+		.column {
+			display: inline-block;
+			width: 86px;
 
-					div {
-							display: inline-block;
-					}
+			div {
+				display: inline-block;
+			}
+		}
+
+		.stats {
+			padding: 8px 8px 10px;
+			font: 400 14px Arial;
+			background-color: rgba(0,0,0,0.03);
+			border-left: 1px solid rgba(0,0,0,0.1);
+			border-top: 1px solid rgba(0,0,0,0.1);
+		}
+
+		.stats:nth-child(3) {
+			border-right: 1px solid rgba(0,0,0,0.1);
+		}
+
+		img {
+			width: 24px;
+		}
+
+		a {
+			color: #51adcf;
+			text-align: center;
+			font-size: 15px;
+			letter-spacing: -0.12px;
+
+			p {
+				padding-left: 3px;
 			}
 
-			.stats {
-					padding: 8px 8px 10px;
-					font: 400 14px Arial;
-					background-color: rgba(0,0,0,0.03);
-					border-left: 1px solid rgba(0,0,0,0.1);
-					border-top: 1px solid rgba(0,0,0,0.1);
+			.specChar {
+				margin-left: 6px;
+				font-size: 13px;
+
+				svg {
+					width: 4px;
+					fill: #51adcf;
+				}
 			}
+		}
 
-			.stats:nth-child(3) {
-					border-right: 1px solid rgba(0,0,0,0.1);
-			}
-
-			img {
-					width: 24px;
-			}
-
-			a {
-					color: #51adcf;
-					text-align: center;
-					font-size: 15px;
-					letter-spacing: -0.12px;
-
-					p {
-							padding-left: 3px;
-					}
-
-					.specChar {
-							margin-left: 3px;
-							font-size: 13px;
-					}
-			}
+		a:visited {
+			color: #51adcf;
+		}
 	}
 
-//Styles for third Row of Weather information
+	//Styles for third Row of Weather information
 	.forcast {
-			margin-bottom: 10px;
+		margin-bottom: 10px;
 
-			.column {
-					border-top: 1px solid rgba(0,0,0,0.1);
-					border-bottom:  1px solid rgba(0,0,0,0.1);
-					border-left: 1px solid rgba(0,0,0,0.1);
+		.column {
+			border-top: 1px solid rgba(0,0,0,0.1);
+			border-bottom:  1px solid rgba(0,0,0,0.1);
+			border-left: 1px solid rgba(0,0,0,0.1);
 
-					.forTemp {
-							margin-top: 14px;
-							vertical-align: top;
-					}
-
-					#temp1 {
-							margin-left: 12px;
-					}
-
-					#temp2 {
-							margin-left: 5px;
-					}
-
-					#temp3 {
-							margin-left: 2px;
-					}
-
-					h5 {
-							font: 800 17px 'open-sans';
-					}
+			.forTemp {
+				margin-top: 14px;
+				vertical-align: top;
 			}
 
-			.column:nth-child(3) {
-					border-right: 1px solid rgba(0,0,0,0.1);
+			#temp1 {
+				margin-left: 12px;
 			}
+
+			#temp2 {
+				margin-left: 5px;
+			}
+
+			#temp3 {
+				margin-left: 2px;
+			}
+
+			h5 {
+				font: 800 17px 'open-sans';
+			}
+		}
+
+		.column:nth-child(3) {
+			border-right: 1px solid rgba(0,0,0,0.1);
+		}
 	}
 
 	.forcastLink {
-			margin: 10px auto 0 !important;
+		margin: 10px auto 0 !important;
 	}
 }
 
@@ -367,22 +386,22 @@ header {
 	padding: 0 0 0 49px;
 
 	div {
-			display: inline-block;
+		display: inline-block;
 	}
 
 	.stats {
-			padding-left: 22px;
+		padding-left: 22px;
 	}
 
 	p {
-			font: 400 12px 'open-sans';
+		font: 400 12px 'open-sans';
 	}
 
 	h4 {
-			font: 800 37px 'open-sans';
-			line-height: 33px;
-			padding-left: 1px;
-			transform: translatey(-4px);
+		font: 800 37px 'open-sans';
+		line-height: 33px;
+		padding-left: 1px;
+		transform: translatey(-4px);
 	}
 }
 
@@ -391,7 +410,7 @@ header {
 	padding-left: 5.4%;
 
 	h4 {
-			margin-left: -6px;
+		margin-left: -6px;
 	}
 }
 
@@ -401,10 +420,9 @@ header {
 	margin-left: 2px;
 }
 
-
 /*==================
 
-		Footer
+			Footer
 
 ==================*/
 
@@ -467,13 +485,13 @@ footer {
 	}
 
 	.compInfo {
-			margin-right: 15px;
+		margin-right: 15px;
 	}
 
 	.contactList {
-			padding: 0 14px;
-			color: #808080;
-			border-left: 1px solid rgba(0,0,0,0.15);
+		padding: 0 14px;
+		color: #808080;
+		border-left: 1px solid rgba(0,0,0,0.15);
 	}
 }
 
@@ -490,9 +508,9 @@ footer {
 
 @media only screen and (min-width: 860px) {
 	header {
-			#navLogo {
-					margin-left: 16.3%;
-			}
+		#navLogo {
+			margin-left: 16.3%;
+		}
 	}
 }
 
@@ -560,13 +578,12 @@ footer {
 		left: 50%;
 		bottom: 0;
 	}
-
 }
 
 @media only screen and (max-width: 590px) {
 	#navLogo {
-			display: none;
-		}
+		display: none;
+	}
 	#nav {
 		position: relative;
 		margin: 12px auto 9px;
